@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_ENT.Entities
 {
-    class ServicioHospedaje
+    public class ServicioHospedaje
     {
     }
 }
