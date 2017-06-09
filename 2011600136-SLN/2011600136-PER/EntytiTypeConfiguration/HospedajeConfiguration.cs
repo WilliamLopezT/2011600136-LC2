@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2011600136_PER
+namespace _2011600136_PER.EntytiTypeConfiguration
 {
-    public class Class1
+    class HospedajeConfiguration
     {
     }
 }

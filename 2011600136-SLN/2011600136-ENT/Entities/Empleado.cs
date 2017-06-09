@@ -9,5 +9,6 @@ namespace _2011600136_ENT.Entities
     public class Empleado : Persona
     {
         public int EmpleadoId { get; set; }
+        public int TipoEmpleado { get; set; }
     }
 }

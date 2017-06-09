@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_ENT.IRepositories
 {
-    interface IClienteRepository
+    public interface IClienteRepository : IRepository
     {
     }
 }

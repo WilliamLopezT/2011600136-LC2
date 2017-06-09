@@ -65,15 +65,33 @@
     <Compile Include="Entities\TipoTransporte.cs" />
     <Compile Include="Entities\Transporte.cs" />
     <Compile Include="Entities\VentaPaquete.cs" />
+    <Compile Include="IRepositories\IAlimentacionRepository.cs" />
+    <Compile Include="IRepositories\ICalificacionHospedajeRepository.cs" />
+    <Compile Include="IRepositories\ICategoriaAlimentacionrepository.cs" />
+    <Compile Include="IRepositories\ICategoriaHospedajeRepository.cs" />
+    <Compile Include="IRepositories\ICategoriatransporteRepository.cs" />
+    <Compile Include="IRepositories\IClienteRepository.cs" />
+    <Compile Include="IRepositories\IComprobantePagoRepository.cs" />
+    <Compile Include="IRepositories\IEmpleadoRepository.cs" />
+    <Compile Include="IRepositories\IHospedajeRepository.cs" />
+    <Compile Include="IRepositories\IMedioPagoRepository.cs" />
+    <Compile Include="IRepositories\IPaqueteRepository.cs" />
+    <Compile Include="IRepositories\IPersonarepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\IServicioHospedajeRepository.cs" />
+    <Compile Include="IRepositories\IServicioTuristicoRepository.cs" />
+    <Compile Include="IRepositories\ITipoComprobanteRepository.cs" />
+    <Compile Include="IRepositories\ITipoHospedajeRepository.cs" />
+    <Compile Include="IRepositories\ITipoTransporteRepository.cs" />
+    <Compile Include="IRepositories\ITransporteRespository.cs" />
+    <Compile Include="IRepositories\IVentapaquetesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

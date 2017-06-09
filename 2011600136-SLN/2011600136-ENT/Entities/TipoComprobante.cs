@@ -9,5 +9,8 @@ namespace _2011600136_ENT.Entities
     public class TipoComprobante
     {
         public int TipoComprobanteId { get; set; }
+        public string NombreComprobante { get; set; }
+        public DateTime Fecha { get; set; }
+        
     }
 }
