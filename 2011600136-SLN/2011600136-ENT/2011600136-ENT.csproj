@@ -84,6 +84,7 @@
     <Compile Include="IRepositories\ITipoHospedajeRepository.cs" />
     <Compile Include="IRepositories\ITipoTransporteRepository.cs" />
     <Compile Include="IRepositories\ITransporteRepository.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="IRepositories\IVentaPaqueteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
