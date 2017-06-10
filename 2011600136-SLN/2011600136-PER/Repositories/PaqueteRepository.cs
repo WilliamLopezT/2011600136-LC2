@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class PaqueteRepository : Repository<Paquete>, IPaqueteRepository
     {
+        private _2011600136Context _Context;
+
+        public PaqueteRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

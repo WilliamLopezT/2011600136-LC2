@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class CalificacionHospedajeRepository : Repository<CalificacionHospedaje>, ICalificacionHospedajeRepository
     {
+        private _2011600136Context _Context;
+
+        public CalificacionHospedajeRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

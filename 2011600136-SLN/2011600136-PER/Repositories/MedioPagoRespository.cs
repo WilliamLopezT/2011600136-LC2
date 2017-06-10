@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class MedioPagoRespository : Repository<MedioPago>, IMedioPagoRepository
     {
+        private _2011600136Context _Context;
+
+        public MedioPagoRespository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class PersonaRepository : Repository<Persona>, IPersonaRepository
     {
+        private _2011600136Context _Context;
+
+        public PersonaRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

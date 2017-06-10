@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class ClienteRepository : Repository<Cliente>, IClienteRepository
     {
+        private _2011600136Context _Context;
+
+        public ClienteRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

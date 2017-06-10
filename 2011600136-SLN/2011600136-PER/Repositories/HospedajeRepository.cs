@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class HospedajeRepository : Repository<Hospedaje>, IHospedajeRepository
     {
+        private _2011600136Context _Context;
+
+        public HospedajeRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

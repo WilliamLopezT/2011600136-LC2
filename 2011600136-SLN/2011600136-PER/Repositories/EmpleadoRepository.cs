@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class EmpleadoRepository : Repository<Empleado>, IEmpleadoRepository
     {
+        private _2011600136Context _Context;
+
+        public EmpleadoRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class ComprobantePagoRepository : Repository<ComprobantePago>, IComprobantePagoRepository
     {
+        private _2011600136Context _Context;
+
+        public ComprobantePagoRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }

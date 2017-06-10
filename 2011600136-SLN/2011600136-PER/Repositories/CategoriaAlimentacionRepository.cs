@@ -10,5 +10,11 @@ namespace _2011600136_PER.Repositories
 {
     public class CategoriaAlimentacionRepository : Repository<CategoriaAlimentacion>, ICategoriaAlimentacionRepository
     {
+        private _2011600136Context _Context;
+
+        public CategoriaAlimentacionRepository(_2011600136Context context)
+        {
+            _Context = context;
+        }
     }
 }
