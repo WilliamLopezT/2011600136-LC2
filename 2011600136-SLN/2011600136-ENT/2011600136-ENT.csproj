@@ -69,14 +69,14 @@
     <Compile Include="IRepositories\ICalificacionHospedajeRepository.cs" />
     <Compile Include="IRepositories\ICategoriaAlimentacionrepository.cs" />
     <Compile Include="IRepositories\ICategoriaHospedajeRepository.cs" />
-    <Compile Include="IRepositories\ICategoriatransporteRepository.cs" />
+    <Compile Include="IRepositories\ICategoriaTransporteRepository.cs" />
     <Compile Include="IRepositories\IClienteRepository.cs" />
     <Compile Include="IRepositories\IComprobantePagoRepository.cs" />
     <Compile Include="IRepositories\IEmpleadoRepository.cs" />
     <Compile Include="IRepositories\IHospedajeRepository.cs" />
     <Compile Include="IRepositories\IMedioPagoRepository.cs" />
     <Compile Include="IRepositories\IPaqueteRepository.cs" />
-    <Compile Include="IRepositories\IPersonarepository.cs" />
+    <Compile Include="IRepositories\IPersonaRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IServicioHospedajeRepository.cs" />
     <Compile Include="IRepositories\IServicioTuristicoRepository.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="IRepositories\ITipoHospedajeRepository.cs" />
     <Compile Include="IRepositories\ITipoTransporteRepository.cs" />
     <Compile Include="IRepositories\ITransporteRespository.cs" />
-    <Compile Include="IRepositories\IVentapaquetesRepository.cs" />
+    <Compile Include="IRepositories\IVentaPaqueteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
