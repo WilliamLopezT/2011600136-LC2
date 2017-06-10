@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_PER.EntytiTypeConfiguration
 {
-    public class VentaPaqueteConfiguration : EntityTypeConfiguration<VentaPaquete>
+     class VentaPaqueteConfiguration : EntityTypeConfiguration<VentaPaquete>
     {
     }
 }
