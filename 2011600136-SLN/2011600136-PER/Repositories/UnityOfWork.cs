@@ -10,6 +10,8 @@ namespace _2011600136_PER.Repositories
     public class UnityOfWork : IUnityOfWork
     {
         private readonly _2011600136Context _Context;
+        private static UnityOfWork _Instance;
+        private static readonly object _Lock = new object();
 
         public IAlimentacionRepository Alimentaciones { get; private set; } 
 
@@ -75,19 +77,30 @@ namespace _2011600136_PER.Repositories
 
         }
 
-
-
-        void IDisposable.Dispose()
+        public static UnityOfWork Instance
         {
-            throw new NotImplementedException();
+            get
+            {
+                lock (_Lock)
+                {
+                    if (_Instance == null)
+                        _Instance = new UnityOfWork();
+                }
+                return _Instance;
+            }
         }
 
-        int IUnityOfWork.SaveChange()
+        public void Dispose()
         {
-            throw new NotImplementedException();
+            _Context.Dispose();
         }
 
-        void IUnityOfWork.StateModified(object entity)
+        public int SaveChange()
+        {
+            return _Context.SaveChanges();
+        }
+
+        public void StateModified(object entity)
         {
             throw new NotImplementedException();
         }
