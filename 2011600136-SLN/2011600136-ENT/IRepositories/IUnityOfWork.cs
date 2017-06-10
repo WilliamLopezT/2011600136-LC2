@@ -14,19 +14,19 @@ namespace _2011600136_ENT.IRepositories
         ICategoriaHospedajeRepository CategoriaHospedajes { get; }
         ICategoriaTransporteRepository CategoriaTransportes { get; }
         IClienteRepository Clientes { get; }
-        IComprobantePagoRepository ComprobantePagos { get; }
+       // IComprobantePagoRepository ComprobantePagos { get; }
         IEmpleadoRepository Empleados { get; }
         IHospedajeRepository Hospedajes { get; }
         IMedioPagoRepository MedioPagos { get; }
-        IPaqueteRepository Paquetes { get; }
+       // IPaqueteRepository Paquetes { get; }
         IPersonaRepository Personas { get; }
         IServicioHospedajeRepository ServicioHospedaje { get; }
         IServicioTuristicoRepository ServicioTuristico { get; }
-        ITipoComprobanteRepository TipoComprobante { get; }
+        //ITipoComprobanteRepository TipoComprobante { get; }
         ITipoHospedajeRepository TipoHospedaje { get; }
         ITipoTransporteRepository TipoTransportes { get; }
         ITransporteRepository Transporte { get; }
-        IVentaPaqueteRepository VentaPaquetes { get; }
+        //IVentaPaqueteRepository VentaPaquetes { get; }
 
         int SaveChange();
 

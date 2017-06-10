@@ -17,11 +17,11 @@ namespace _2011600136_PER
         public DbSet<CategoriaHospedaje> CategoriaHospedajes { get; set; }
         public DbSet<CategoriaTransporte> CategoriaTransportes { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<ComprobantePago> ComprobantePagos { get; set; }
+      //  public DbSet<ComprobantePago> ComprobantePagos { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Hospedaje> Hospedajes { get; set; }
         public DbSet<MedioPago> MedioPagos { get; set; }
-        public DbSet<Paquete> Paquetes { get; set; }
+      //  public DbSet<Paquete> Paquetes { get; set; }
         public DbSet<Persona> Personas { get; set; }
         public DbSet<ServicioHospedaje> ServicioHospedajes { get; set; }
         public DbSet<ServicioTuristico> ServicioTuristicos { get; set; }
@@ -29,7 +29,7 @@ namespace _2011600136_PER
         public DbSet<TipoHospedaje> TipoHospedajes { get; set; }
         public DbSet<TipoTransporte> TipoTransporte { get; set; }
         public DbSet<Transporte> Transportes { get; set; }
-        public DbSet<VentaPaquete> VentaPaquetes { get; set; }
+    //    public DbSet<VentaPaquete> VentaPaquetes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

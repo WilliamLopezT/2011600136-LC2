@@ -25,7 +25,7 @@ namespace _2011600136_PER.Repositories
 
         public IClienteRepository Clientes { get; private set; }
 
-        public IComprobantePagoRepository ComprobantePagos { get; private set; }
+        //public IComprobantePagoRepository ComprobantePagos { get; private set; }
 
         public IEmpleadoRepository Empleados { get; private set; }
 
@@ -33,7 +33,7 @@ namespace _2011600136_PER.Repositories
 
         public IMedioPagoRepository MedioPagos  { get; private set; }
 
-    public IPaqueteRepository Paquetes { get; private set; }
+   // public IPaqueteRepository Paquetes { get; private set; }
 
     public IPersonaRepository Personas { get; private set; }
 
@@ -41,7 +41,7 @@ namespace _2011600136_PER.Repositories
 
         public IServicioTuristicoRepository ServicioTuristico { get; private set; }
 
-        public ITipoComprobanteRepository TipoComprobante { get; private set; }
+       // public ITipoComprobanteRepository TipoComprobante { get; private set; }
 
         public ITipoHospedajeRepository TipoHospedaje { get; private set; }
 
@@ -49,7 +49,7 @@ namespace _2011600136_PER.Repositories
 
         public ITransporteRepository Transporte { get; private set; }
 
-        public IVentaPaqueteRepository VentaPaquetes { get; private set; }
+      //  public IVentaPaqueteRepository VentaPaquetes { get; private set; }
 
 
         private UnityOfWork()
@@ -61,19 +61,19 @@ namespace _2011600136_PER.Repositories
             CategoriaHospedajes = new CategoriaHospedajeRepository(_Context);
             CategoriaTransportes = new CategoriaTransporteRepository(_Context);
             Clientes = new ClienteRepository(_Context);
-            ComprobantePagos = new ComprobantePagoRepository(_Context);
+            //ComprobantePagos = new ComprobantePagoRepository(_Context);
             Empleados = new EmpleadoRepository(_Context);
             Hospedajes = new HospedajeRepository(_Context);
             MedioPagos = new MedioPagoRespository(_Context);
-            Paquetes = new PaqueteRepository(_Context);
+           // Paquetes = new PaqueteRepository(_Context);
             Personas = new PersonaRepository(_Context);
             ServicioHospedaje = new ServicioHospedajeRepository(_Context);
             ServicioTuristico = new ServicioTuristicoRepository(_Context);
-            TipoComprobante = new TipoComprobanteRepository(_Context);
+            //TipoComprobante = new TipoComprobanteRepository(_Context);
             TipoHospedaje = new TipoHospedajeRepository(_Context);
             TipoTransportes = new TipoTransporteRepository(_Context);
             Transporte = new TransporteRepository(_Context);
-            VentaPaquetes = new VentaPaqueteRepository(_Context);
+          //VentaPaquetes = new VentaPaqueteRepository(_Context);
 
         }
 

@@ -52,11 +52,9 @@
     <Compile Include="Entities\CategoriaHospedaje.cs" />
     <Compile Include="Entities\CategoriaTransporte.cs" />
     <Compile Include="Entities\Cliente.cs" />
-    <Compile Include="Entities\ComprobantePago.cs" />
     <Compile Include="Entities\Empleado.cs" />
     <Compile Include="Entities\Hospedaje.cs" />
     <Compile Include="Entities\MedioPago.cs" />
-    <Compile Include="Entities\Paquete.cs" />
     <Compile Include="Entities\Persona.cs" />
     <Compile Include="Entities\ServicioHospedaje.cs" />
     <Compile Include="Entities\ServicioTuristico.cs" />
@@ -64,18 +62,15 @@
     <Compile Include="Entities\TipoHospedaje.cs" />
     <Compile Include="Entities\TipoTransporte.cs" />
     <Compile Include="Entities\Transporte.cs" />
-    <Compile Include="Entities\VentaPaquete.cs" />
     <Compile Include="IRepositories\IAlimentacionRepository.cs" />
     <Compile Include="IRepositories\ICalificacionHospedajeRepository.cs" />
     <Compile Include="IRepositories\ICategoriaAlimentacionRepository.cs" />
     <Compile Include="IRepositories\ICategoriaHospedajeRepository.cs" />
     <Compile Include="IRepositories\ICategoriaTransporteRepository.cs" />
     <Compile Include="IRepositories\IClienteRepository.cs" />
-    <Compile Include="IRepositories\IComprobantePagoRepository.cs" />
     <Compile Include="IRepositories\IEmpleadoRepository.cs" />
     <Compile Include="IRepositories\IHospedajeRepository.cs" />
     <Compile Include="IRepositories\IMedioPagoRepository.cs" />
-    <Compile Include="IRepositories\IPaqueteRepository.cs" />
     <Compile Include="IRepositories\IPersonaRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IServicioHospedajeRepository.cs" />
@@ -85,7 +80,6 @@
     <Compile Include="IRepositories\ITipoTransporteRepository.cs" />
     <Compile Include="IRepositories\ITransporteRepository.cs" />
     <Compile Include="IRepositories\IUnityOfWork.cs" />
-    <Compile Include="IRepositories\IVentaPaqueteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
