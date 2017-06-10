@@ -1,0 +1,43 @@
+﻿@model _2011600136_ENT.Entities.Hospedaje
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Hospedaje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreServicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreServicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HospedajeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HospedajeId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAlojamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAlojamiento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServicioTuristicoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

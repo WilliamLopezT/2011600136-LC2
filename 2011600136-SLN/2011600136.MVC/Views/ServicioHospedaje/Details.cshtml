@@ -1,0 +1,43 @@
+﻿@model _2011600136_ENT.Entities.ServicioHospedaje
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ServicioHospedaje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Comida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bebidas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bebidas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServicioHospedajeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

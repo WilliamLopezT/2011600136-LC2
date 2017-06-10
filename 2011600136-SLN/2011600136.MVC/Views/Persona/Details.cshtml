@@ -1,0 +1,51 @@
+﻿@model _2011600136_ENT.Entities.Persona
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Persona</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DNIPersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DNIPersona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DireccionPersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DireccionPersona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EdadPersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EdadPersona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoPersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoPersona)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
