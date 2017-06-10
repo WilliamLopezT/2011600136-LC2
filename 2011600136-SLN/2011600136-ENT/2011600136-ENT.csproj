@@ -67,7 +67,7 @@
     <Compile Include="Entities\VentaPaquete.cs" />
     <Compile Include="IRepositories\IAlimentacionRepository.cs" />
     <Compile Include="IRepositories\ICalificacionHospedajeRepository.cs" />
-    <Compile Include="IRepositories\ICategoriaAlimentacionrepository.cs" />
+    <Compile Include="IRepositories\ICategoriaAlimentacionRepository.cs" />
     <Compile Include="IRepositories\ICategoriaHospedajeRepository.cs" />
     <Compile Include="IRepositories\ICategoriaTransporteRepository.cs" />
     <Compile Include="IRepositories\IClienteRepository.cs" />
@@ -83,7 +83,7 @@
     <Compile Include="IRepositories\ITipoComprobanteRepository.cs" />
     <Compile Include="IRepositories\ITipoHospedajeRepository.cs" />
     <Compile Include="IRepositories\ITipoTransporteRepository.cs" />
-    <Compile Include="IRepositories\ITransporteRespository.cs" />
+    <Compile Include="IRepositories\ITransporteRepository.cs" />
     <Compile Include="IRepositories\IVentaPaqueteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

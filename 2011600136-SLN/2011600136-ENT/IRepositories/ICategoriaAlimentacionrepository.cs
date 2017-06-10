@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_ENT.IRepositories
 {
-    public interface ICategoriaAlimentacionrepository : IRepository<CategoriaAlimentacion>
+    public interface ICategoriaAlimentacionRepository : IRepository<CategoriaAlimentacion>
     {
     }
 }

@@ -83,7 +83,7 @@
     <Compile Include="Repositories\TipoHospedajeRepository.cs" />
     <Compile Include="Repositories\TipoTransporteRepository.cs" />
     <Compile Include="Repositories\TransporteRepository.cs" />
-    <Compile Include="Repositories\VentaPaquetesRepository.cs" />
+    <Compile Include="Repositories\VentaPaqueteRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
