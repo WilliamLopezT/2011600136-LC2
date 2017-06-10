@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_PER.EntytiTypeConfiguration
 {
-    public class ServicioHospedajeConfiguration : EntityTypeConfiguration<ServicioHospedaje>
+    public class VentaPaqueteConfiguration : EntityTypeConfiguration<VentaPaquete>
     {
     }
 }

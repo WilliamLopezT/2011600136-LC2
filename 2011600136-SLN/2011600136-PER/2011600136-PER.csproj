@@ -53,14 +53,13 @@
     <Compile Include="EntytiTypeConfiguration\CategoriaHospedajeConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\CategoriaTransporteConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\ComprobantePagoConfiguration.cs" />
-    <Compile Include="EntytiTypeConfiguration\EntityTypeConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\MedioPagoConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\PaqueteConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\PersonaConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\ServicioHospedajeConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\ServicioTuristicoConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\TipoComprobanteConfiguration.cs" />
-    <Compile Include="EntytiTypeConfiguration\TipoHospedajeConfiguration.cs" />
+    <Compile Include="EntytiTypeConfiguration\TipoHospodajeConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\TipoTransporteConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\VentaPaqueteConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
