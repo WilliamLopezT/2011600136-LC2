@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2011600136_PER.Repositories
 {
-    class CalificacionHospedajeRepository
+    public class CalificacionHospedajeRepository
     {
     }
 }

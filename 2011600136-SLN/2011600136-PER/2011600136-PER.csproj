@@ -76,6 +76,7 @@
     <Compile Include="Repositories\MedioPagoRespository.cs" />
     <Compile Include="Repositories\PaqueteRepository.cs" />
     <Compile Include="Repositories\PersonaRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\ServicioHospedajeRepository.cs" />
     <Compile Include="Repositories\ServicioTuristicoRepository.cs" />
     <Compile Include="Repositories\TipoComprobanteRepository.cs" />
