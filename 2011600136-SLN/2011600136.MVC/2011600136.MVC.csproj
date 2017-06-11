@@ -220,11 +220,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Alimentacions\Create.cshtml" />
-    <Content Include="Views\Alimentacions\Delete.cshtml" />
-    <Content Include="Views\Alimentacions\Details.cshtml" />
-    <Content Include="Views\Alimentacions\Edit.cshtml" />
-    <Content Include="Views\Alimentacions\Index.cshtml" />
     <Content Include="Views\CalificacionHospedaje\Create.cshtml" />
     <Content Include="Views\CalificacionHospedaje\Delete.cshtml" />
     <Content Include="Views\CalificacionHospedaje\Details.cshtml" />

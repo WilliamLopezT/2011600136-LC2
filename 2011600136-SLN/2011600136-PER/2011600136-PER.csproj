@@ -59,6 +59,10 @@
     <Compile Include="EntytiTypeConfiguration\TipoComprobanteConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\TipoHospodajeConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\TipoTransporteConfiguration.cs" />
+    <Compile Include="Migrations\201706110444539_InitialModel.cs" />
+    <Compile Include="Migrations\201706110444539_InitialModel.Designer.cs">
+      <DependentUpon>201706110444539_InitialModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AlimentacionRepository.cs" />
@@ -89,6 +93,11 @@
       <Project>{e6ac77e6-3f83-464a-889b-a5af6c03ff50}</Project>
       <Name>2011600136-ENT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706110444539_InitialModel.resx">
+      <DependentUpon>201706110444539_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
