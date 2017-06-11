@@ -28,7 +28,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hospedaje hospedaje = db.ServicioTuristicos.Find(id);
+            Hospedaje hospedaje = db.Hospedajes.Find(id);
             if (hospedaje == null)
             {
                 return HttpNotFound();
@@ -66,7 +66,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hospedaje hospedaje = db.ServicioTuristicos.Find(id);
+            Hospedaje hospedaje = db.Hospedajes.Find(id);
             if (hospedaje == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hospedaje hospedaje = db.ServicioTuristicos.Find(id);
+            Hospedaje hospedaje = db.Hospedajes.Find(id);
             if (hospedaje == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace _2011600136.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Hospedaje hospedaje = db.ServicioTuristicos.Find(id);
+            Hospedaje hospedaje = db.Hospedajes.Find(id);
             db.ServicioTuristicos.Remove(hospedaje);
             db.SaveChanges();
             return RedirectToAction("Index");

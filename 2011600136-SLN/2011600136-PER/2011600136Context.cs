@@ -29,7 +29,9 @@ namespace _2011600136_PER
         public DbSet<TipoHospedaje> TipoHospedajes { get; set; }
         public DbSet<TipoTransporte> TipoTransporte { get; set; }
         public DbSet<Transporte> Transportes { get; set; }
-    //    public DbSet<VentaPaquete> VentaPaquetes { get; set; }
+        public object Alimentacion { get; set; }
+
+        //    public DbSet<VentaPaquete> VentaPaquetes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

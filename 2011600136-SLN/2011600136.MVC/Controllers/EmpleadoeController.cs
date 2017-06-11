@@ -28,7 +28,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Empleado empleado = db.Personas.Find(id);
+            Empleado empleado = db.Empleados.Find(id);
             if (empleado == null)
             {
                 return HttpNotFound();
@@ -66,7 +66,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Empleado empleado = db.Personas.Find(id);
+            Empleado empleado = db.Empleados.Find(id);
             if (empleado == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Empleado empleado = db.Personas.Find(id);
+            Empleado empleado = db.Empleados.Find(id);
             if (empleado == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace _2011600136.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Empleado empleado = db.Personas.Find(id);
+            Empleado empleado = db.Empleados.Find(id);
             db.Personas.Remove(empleado);
             db.SaveChanges();
             return RedirectToAction("Index");

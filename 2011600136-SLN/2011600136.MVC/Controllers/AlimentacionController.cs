@@ -11,107 +11,107 @@ using _2011600136_PER;
 
 namespace _2011600136.MVC.Controllers
 {
-    public class TransporteController : Controller
+    public class AlimentacionController : Controller
     {
         private _2011600136Context db = new _2011600136Context();
 
-        // GET: Transporte
+        // GET: Alimentacion
         public ActionResult Index()
         {
-            return View(db.ServicioTuristicos.ToList());
+            return View(db.Alimentacions.ToList());
         }
 
-        // GET: Transporte/Details/5
+        // GET: Alimentacion/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Transporte transporte = db.Transportes.Find(id);
-            if (transporte == null)
+            Alimentacion alimentacion = db.Alimentacions.Find(id);
+            if (alimentacion == null)
             {
                 return HttpNotFound();
             }
-            return View(transporte);
+            return View(alimentacion);
         }
 
-        // GET: Transporte/Create
+        // GET: Alimentacion/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Transporte/Create
+        // POST: Alimentacion/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ServicioTuristicoId,NombreServicio,TransporteId,NombreEmpresa")] Transporte transporte)
+        public ActionResult Create([Bind(Include = "AlimentacionId,NombreEstablecimiento")] Alimentacion alimentacion)
         {
             if (ModelState.IsValid)
             {
-                db.ServicioTuristicos.Add(transporte);
+                db.Alimentacions.Add(alimentacion);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(transporte);
+            return View(alimentacion);
         }
 
-        // GET: Transporte/Edit/5
+        // GET: Alimentacion/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Transporte transporte = db.Transportes.Find(id);
-            if (transporte == null)
+            Alimentacion alimentacion = db.Alimentacions.Find(id);
+            if (alimentacion == null)
             {
                 return HttpNotFound();
             }
-            return View(transporte);
+            return View(alimentacion);
         }
 
-        // POST: Transporte/Edit/5
+        // POST: Alimentacion/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ServicioTuristicoId,NombreServicio,TransporteId,NombreEmpresa")] Transporte transporte)
+        public ActionResult Edit([Bind(Include = "AlimentacionId,NombreEstablecimiento")] Alimentacion alimentacion)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(transporte).State = EntityState.Modified;
+                db.Entry(alimentacion).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(transporte);
+            return View(alimentacion);
         }
 
-        // GET: Transporte/Delete/5
+        // GET: Alimentacion/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Transporte transporte = db.Transportes.Find(id);
-            if (transporte == null)
+            Alimentacion alimentacion = db.Alimentacions.Find(id);
+            if (alimentacion == null)
             {
                 return HttpNotFound();
             }
-            return View(transporte);
+            return View(alimentacion);
         }
 
-        // POST: Transporte/Delete/5
+        // POST: Alimentacion/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Transporte transporte = db.Transportes.Find(id);
-            db.ServicioTuristicos.Remove(transporte);
+            Alimentacion alimentacion = db.Alimentacions.Find(id);
+            db.Alimentacions.Remove(alimentacion);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -28,7 +28,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Personas.Find(id);
+            Cliente cliente = db.Clientes.Find(id);
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -66,7 +66,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Personas.Find(id);
+            Cliente cliente = db.Clientes.Find(id);
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace _2011600136.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Personas.Find(id);
+            Cliente cliente = db.Clientes.Find(id);
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -110,7 +110,7 @@ namespace _2011600136.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Cliente cliente = db.Personas.Find(id);
+            Cliente cliente = db.Clientes.Find(id);
             db.Personas.Remove(cliente);
             db.SaveChanges();
             return RedirectToAction("Index");
